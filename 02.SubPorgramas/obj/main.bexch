@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\rcuestal\Desktop\IndraNoviembre\02.SubPorgramas\default.gpr
+20221110100456 1d9fd2a503813da2177c5473e251f968
+[BOUND OBJECT FILES]
+C:\Users\rcuestal\Desktop\IndraNoviembre\02.SubPorgramas\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\rcuestal\Desktop\IndraNoviembre\02.SubPorgramas\obj\
+-LC:\Users\rcuestal\Desktop\IndraNoviembre\02.SubPorgramas\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
