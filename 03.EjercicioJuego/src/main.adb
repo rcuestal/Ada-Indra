@@ -18,7 +18,7 @@ procedure Main is
 
    G : Generator;
    Numero_Al_Azar : Integer;
-   Intentos : Integer;
+   Intentos : Integer := 5;
    Valor : Integer;
 
    function Comparador(ValorIntroducido:in integer; ValorBuscado: in integer) return Boolean is
