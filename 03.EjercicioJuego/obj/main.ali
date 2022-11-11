@@ -3,16 +3,17 @@ M P W=b
 A -gnatA
 A -mtune=generic
 A -march=x86-64
-P ZX
+P SS ZX
 
 RN
 RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_SECONDARY_STACK
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		6c100b64 NE OO SU
+U main%b		main.adb		6b522685 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -22,8 +23,9 @@ W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
@@ -47,9 +49,9 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221111085652 3bdf4f3b main%b
+D main.adb		20221111090226 3c9d62da main%b
 D system.ads		20210520051136 2ffa5114 system%s
-D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
@@ -88,19 +90,20 @@ X 11 a-string.ads
 16K13*Strings 35e16 23|4r10 5r9
 X 12 a-strfix.ads
 43K21*Fixed 1398e22 23|4w18 5r17
+1349V14*"*"{string} 23|63s19 65s19 67s19 69s19
 X 17 a-textio.ads
 58K13*Text_IO 725e16 23|1w10 2r9
-506U14*Put_Line 23|28s11 31s13 34s13 44s4 47s4 49s4 54s7 55s7 59s4 62s7 64s7
-. 67s4
+506U14*Put_Line 23|28s11 31s13 34s13 44s4 46s4 48s4 50s4 55s7 57s7 60s4 63s7
+. 64s7 65s7 67s7 68s7 69s7 72s4
 X 19 a-tiinio.ads
-59U14*Get 23|45s4[6|18] 48s4[6|18] 56s7[6|18]
+59U14*Get 23|45s4[6|18] 49s4[6|18] 56s7[6|18]
 X 23 main.adb
-17U11*Main 17b11 69l5 69t9
+17U11*Main 17b11 74l5 74t9
 19r4 G{9|47R9} 41r10 42r38
-20i4 Numero_Al_Azar{integer} 42m4 52r35 62r51 64r53
-21i4 Intentos{integer} 45m8 51r11 53m7 53r19 61r7
-22i4 Valor{integer} 48m8 52r28 56m11
-24V13 Comparador{boolean} 24b13 24>24 24>53 37t7 52s17
+20i4 Numero_Al_Azar{integer} 42m4 53r35 64r53 68r55
+21i4 Intentos{integer} 45m8 52r11 54m7 54r19 62r7
+22i4 Valor{integer} 49m8 53r28 56m11
+24V13 Comparador{boolean} 24b13 24>24 24>53 37t7 53s17
 24i24 ValorIntroducido{integer} 27r11 30r14
 24i53 ValorBuscado{integer} 27r30 30r33
 

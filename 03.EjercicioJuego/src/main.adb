@@ -60,9 +60,13 @@ begin
    Put_Line("");
 
    if Intentos > 0 then
-      Put_Line("Ganaste, estaba pensando en el" & Numero_Al_Azar'Image);
+      Put_Line(39 * '-');
+      Put_Line("| Ganaste, estaba pensando en el" & Numero_Al_Azar'Image & " |");
+      Put_Line(39 * '-');
    else
-      Put_Line("Perdistes, estaba pensando en el" & Numero_Al_Azar'Image);
+      Put_Line(39 * '-');
+      Put_Line("| Perdistes, estaba pensando en el" & Numero_Al_Azar'Image & " |");
+      Put_Line(39 * '-');
    end if;
 
    Put_Line("");
