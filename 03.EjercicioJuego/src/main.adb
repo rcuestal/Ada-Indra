@@ -47,7 +47,7 @@ begin
    Put_Line("Introduce un valor inicial");
    Get(Valor);
 
-   while (Intentos > 0) loop  --- No funciona al 100%, Tengo que cambiar algunos ors o ands
+   while (Intentos > 0) loop
       exit when Comparador(valor, Numero_Al_Azar);
       Intentos := Intentos - 1;
       Put_Line("Introduce otro valor");
