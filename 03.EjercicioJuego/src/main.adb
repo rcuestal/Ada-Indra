@@ -43,19 +43,28 @@ begin
    --Put(Numero_Al_Azar, Exp => 0);
    Put_Line("¿Cuántos intentos quieres probar?");
    Get(Intentos);
+   Put_Line("");
 
    Put_Line("Introduce un valor inicial");
    Get(Valor);
+   Put_Line("");
 
    while (Intentos > 0) loop
       exit when Comparador(valor, Numero_Al_Azar);
       Intentos := Intentos - 1;
       Put_Line("Introduce otro valor");
       Get(Valor);
+      Put_Line("");
    end loop;
 
+   Put_Line("");
 
-   Put_Line("Estaba pensando en el" & Numero_Al_Azar'Image);
+   if Intentos > 0 then
+      Put_Line("Ganaste, estaba pensando en el" & Numero_Al_Azar'Image);
+   else
+      Put_Line("Perdistes, estaba pensando en el" & Numero_Al_Azar'Image);
+   end if;
+
    Put_Line("");
 
 end Main;
