@@ -21,6 +21,9 @@ procedure Main is
    Intentos : Integer := 5;
    Valor : Integer;
 
+   -- Primera declaracion de tipos
+   -- type Valor_Azar_Posible is new- Integer range 1..100;
+
    function Comparador(ValorIntroducido:in integer; ValorBuscado: in integer) return Boolean is
 
    begin
