@@ -1,9 +1,4 @@
-with Ada.Text_IO;
-use Ada.Text_IO;
-
-
-
-procedure Main is
+package body io is
 
    function Get_Not_Empty_Line(Prompt:String := "Ingresa un texto no vacio"; Error:String := "Ha ingresado un texto vacío, vuelva a intentarlo") return String is
 
@@ -22,7 +17,7 @@ procedure Main is
       end loop;
 
    end;
-
+   
    function Try_Convert_Integer(Texto: String; Texto_Como_Entero: out Integer) return Boolean is
 
    begin
@@ -31,8 +26,16 @@ procedure Main is
    exception
          when others => return False;
    end;
+   
+   function Try_Convert_Float(Texto: String; Texto_Como_Float: out Float) return Boolean is
 
-   -- Mi función
+   begin
+      Texto_Como_Float := Float'Value(Texto);
+      return True;
+   exception
+         when others => return False;
+   end;
+
    function Get_Integer(Prompt:String := "Ingresa un valor no vacio"; Error:String := "Ha ingresado un texto vacío, vuelva a intentarlo") return Integer is
 
    begin
@@ -51,16 +54,28 @@ procedure Main is
       end loop;
 
    end Get_Integer;
+   
+   function Get_Float(Prompt:String := "Ingresa un valor no vacio";
+                      Error:String := "Ha ingresado un texto vacío, vuelva a intentarlo";
+                      Separador_Decimales: Character := ',') return Float is
+   
+   begin
+      Put_Line(Prompt);
+      loop
+         declare
+            Numero_En_Texto: String := Get_Line;
+            Valor : Float := 0.0;
+         begin
+            Reemplazar(Numero_En_Texto, Separador_Decimales, '.');
+            if (Try_Convert_Float(Numero_En_Texto, Valor)) then
+               return Valor;
+            else
+               Put_Line(Error);
+            end if;
+         end;
+      end loop;
 
-   -- Otra posibilidad
-   --  function Get_Integer(Prompt:String := "Ingresa un numero"; Error:String := "No ha ingresado un numero, vuelva a intentarlo") return Integer is Result : Integer := 0;
-   --  begin
-   --     Put_Line(Prompt);
-   --     while (not(Try_Convert_Integer(Get_Line, Result))) loop
-   --        Put_Line(Error);
-   --     end loop;
-   --     return Result;
-   --  end;
+   end Get_Float;
 
    function Get_Integer_Between
       (Prompt:String := "Ingresa un texto no vacio";
@@ -87,36 +102,26 @@ procedure Main is
       end loop;
 
    end;
-
-
-
-begin
-
-
-   declare
-
-      Nombre : String := Get_Not_Empty_Line("Introduce tu nombre", "¿Enserio lo dejastes vacio? Prueba de nuevo");
-      Edad : Integer := Get_Integer("Introduce tu edad", "¿Enserio lo dejastes vacio? Prueba de nuevo");
-
+   
+   procedure Reemplazar(Input: in out String; CaracterInicial: in Character; CaracterFinal: in Character) is
    begin
-      Put_Line("Hola, " & Nombre);
-      Put_Line("Tienes" & Edad'image & " años");
-
-
-      --  Put_Line("Introduzca su edad");
-      --
-      --
-      --  declare
-      --     Edad : Integer := 0;
-      --  begin
-      --     if (Get_Integer) then
-      --        Put_Line("Tienes" & Edad'Image & " años");
-      --     else
-      --        Put_Line("No has introducido un número");
-      --     end if;
-      --  end;
-
-
+      for I in Input'Range loop
+         if (Input(I) = CaracterInicial) then
+            Input(I) := CaracterFinal;
+         end if;
+      end loop;
    end;
+   
+   function To_String
+      (Input:Float;
+      Cantidad_Decimales : Integer := 2;
+       Separador_Decimales : Character := ',') return String is
 
-end Main;
+      Result :String := Integer(Float'Floor(Input))'Image 
+        & Separador_Decimales 
+        & Integer((Input - Float'Floor(Input)) * Float(10 ** Cantidad_Decimales))'Image ;
+   begin
+      return result;
+   end To_String;
+
+end io;
