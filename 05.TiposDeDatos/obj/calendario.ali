@@ -1,0 +1,115 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U calendario%b		calendario.adb		4514aa85 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U calendario%s		calendario.ads		0b3076e4 EE NE OO PK IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D calendario.ads	20221115095228 0b3076e4 calendario%s
+D calendario.adb	20221115095656 e0d0090c calendario%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
+D s-conca5.ads		20210520051132 875e432e system.concat_5%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [mostrar_dias calendario 16 14 none]
+G c Z s b [mostrar_estaciones calendario 17 14 none]
+G c Z s b [to_string calendario 18 13 none]
+G c Z s s [fechaIP calendario 10 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 12|1w10 1r27
+506U14*Put_Line 12|10s13 12s13 22s13 24s13 26s13 28s13 30s13 32s13 34s13
+. 36s13
+X 11 calendario.ads
+1K9*calendario 20l5 20e15 12|3b14 46l5 46t15
+3E9*Dia_Semana 3e83 12|7r18
+3n24*Lunes{3E9}
+3n31*Martes{3E9}
+3n39*Miercoles{3E9}
+3n50*Jueves{3E9}
+3n58*Viernes{3E9}
+3n67*Sabado{3E9} 12|9r15
+3n75*Domingo{3E9} 12|9r23
+4E9*Meses_Ano 4e123 12r12 12|19r20
+4n23*Enero{4E9} 12|21r15
+4n30*Febrero{4E9} 12|21r22
+4n39*Marzo{4E9} 12|23r15
+4n46*Abril{4E9} 12|25r15
+4n53*Mayo{4E9} 12|25r22
+4n59*Junio{4E9} 12|27r15
+4n66*Julio{4E9} 12|29r15
+4n73*Agosto{4E9} 12|29r22
+4n81*Septiembre{4E9} 12|31r15
+4n93*Octubre{4E9} 12|33r15
+4n102*Noviembre{4E9} 12|33r24
+4n113*Diciembre{4E9} 12|35r15
+5E9*Estaciones 5e59
+5n24*Primavera{5E9} 12|24r82 26r44 28r56
+5n35*Verano{5E9} 12|28r83 30r44 32r56
+5n43*Otoño{5E9} 12|32r80 34r44 36r56
+5n50*Invierno{5E9} 12|22r44 24r56 36r79
+7I9*Dia_Del_Mes<integer> 11r12
+8I9*Años<integer> 13r12
+10R9*Fecha 14e14 18r28 12|41r28
+11i7*Dia{7I9} 12|43r19
+12e7*Mes{4E9} 12|43r44
+13i7*Año{8I9} 12|43r68
+16U14*Mostrar_Dias 12|5b14 15t7
+17U14*Mostrar_Estaciones 12|17b14 39t7
+18V13*To_String{string} 18>23 12|41b13 44t7
+18r23 Date{10R9} 12|41b23 43r14 43r39 43r63
+X 12 calendario.adb
+7e11 Dia{11|3E9} 8r15 10r22 12r22
+19e11 Meses{11|4E9} 20r15 22r22 24r22 26r22 28r22 30r22 32r22 34r22 36r22
+

@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\04.Paquetes\default.gpr</vfs_file>
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project />
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\02.EstructurasDeControl\src\main.adb</vfs_file>
