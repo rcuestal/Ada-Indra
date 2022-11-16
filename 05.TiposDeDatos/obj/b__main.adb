@@ -31,8 +31,8 @@ package body ada_main is
    E119 : Short_Integer; pragma Import (Ada, E119, "ada__finalization_E");
    E118 : Short_Integer; pragma Import (Ada, E118, "system__file_io_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
-   E146 : Short_Integer; pragma Import (Ada, E146, "calendario_E");
-   E156 : Short_Integer; pragma Import (Ada, E156, "figuras_E");
+   E160 : Short_Integer; pragma Import (Ada, E160, "calendario_E");
+   E170 : Short_Integer; pragma Import (Ada, E170, "figuras_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -210,8 +210,8 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E094 := E094 + 1;
-      E146 := E146 + 1;
-      E156 := E156 + 1;
+      E160 := E160 + 1;
+      E170 := E170 + 1;
    end adainit;
 
    procedure Ada_Main_Program;

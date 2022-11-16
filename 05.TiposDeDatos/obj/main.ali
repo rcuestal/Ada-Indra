@@ -15,9 +15,10 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		abbabb7f NE OO SU
+U main%b		main.adb		8a94a544 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W calendario%s		calendario.adb		calendario.ali
@@ -35,6 +36,7 @@ Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
@@ -43,12 +45,13 @@ D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D calendario.ads	20221115095228 0b3076e4 calendario%s
 D figuras.ads		20221115091040 fd2447c0 figuras%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221115095626 12d01896 main%b
+D main.adb		20221116095840 c5b58f09 main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
 D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
@@ -77,53 +80,66 @@ D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 7 11 none]
-G r c none [main standard 7 11 none] [calcular_area_triangulo figuras 8 13 none]
-G r c none [main standard 7 11 none] [mostrar_dias calendario 16 14 none]
-G r c none [main standard 7 11 none] [mostrar_estaciones calendario 17 14 none]
-G r c none [main standard 7 11 none] [to_string calendario 18 13 none]
+G c Z b b [main standard 8 11 none]
+G r c none [main standard 8 11 none] [calcular_area_triangulo figuras 8 13 none]
+G r c none [main standard 8 11 none] [mostrar_dias calendario 16 14 none]
+G r c none [main standard 8 11 none] [mostrar_estaciones calendario 17 14 none]
+G r c none [main standard 8 11 none] [to_string calendario 18 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|1r6 1r23 2r6 2r29
+16K9*Ada 20e8 19|1r6 1r23 2r6 2r29 5r6 140r11
 X 3 a-flteio.ads
-20K13*Float_Text_IO[11|46] 17|2w10 2r33
-X 10 a-textio.ads
-58K13*Text_IO 725e16 17|1w10 1r27
-506U14*Put_Line 17|37s4 40s4 45s4 49s4 55s4 59s4 61s4 62s4 66s4 70s4 72s4
-. 74s4 77s4 92s4 119s4 129s7 130s7
-X 13 calendario.ads
-1K9*calendario 20e15 17|4w6 4r22 123r11
-3E9*Dia_Semana 3e83 17|30r13 31r16 32r15 71r17 73r16
-3n31*Martes{3E9} 17|69r14
-4n23*Enero{4E9} 17|126r47
-4n102*Noviembre{4E9} 17|125r27
+20K13*Float_Text_IO[12|46] 19|2w10 2r33
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[13|46] 19|5w10 140r15
+X 11 a-textio.ads
+58K13*Text_IO 725e16 19|1w10 1r27
+506U14*Put_Line 19|38s4 41s4 46s4 50s4 56s4 60s4 62s4 63s4 67s4 71s4 73s4
+. 75s4 78s4 93s4 120s4 130s7 131s7 135s4 155s7 158s30 159s34 160s31 168s4
+. 180s7
+X 13 a-tiinio.ads
+59U14*Get 19|156s7[4|18]
+X 15 calendario.ads
+1K9*calendario 20e15 19|4w6 4r22 124r11
+3E9*Dia_Semana 3e83 19|31r13 32r16 33r15 72r17 74r16
+3n31*Martes{3E9} 19|70r14
+4n23*Enero{4E9} 19|127r47
+4n102*Noviembre{4E9} 19|126r27
 7I9*Dia_Del_Mes<integer>
 8I9*Años<integer>
-10R9*Fecha 14e14 17|125r13 126r20
-11i7*Dia{7I9} 17|126m30
-12e7*Mes{4E9} 17|126m40
-13i7*Año{8I9} 17|126m54
-16U14*Mostrar_Dias 17|89s4
-17U14*Mostrar_Estaciones 17|116s4
-18V13*To_String{string} 17|129s27 130s40
-X 14 figuras.ads
-1K9*figuras 12e12 17|3w6 3r19
-3F9*Distancia<float> 17|9r11 10r13
-4F9*Area<float> 17|11r21
-8V13*Calcular_Area_Triangulo{4F9} 17|36s22
-X 17 main.adb
-7U11*Main 7b11 134l5 134t9
-9f4 Base{14|3F9} 36r46
-10f4 Altura{14|3F9} 36r52
-11f4 Area_Triangulo{14|4F9} 36m4 37r38
-15I9 Nota<integer> 18r18 45r34
-16I9 Numero_Muy_Alto<integer> 20r41 49r34
-18i4 Nota_Examen{15I9} 43m4 44m4 44r19
-20i4 Bits_reservados_Menos_1{integer} 51r15
-24M9 Angulo 25r11
-25m4 Giro{24M9} 59r27 60m4 60r12 61r45
-30e4 Hoy_Es{13|3E9} 69m4 70r13 71r33 73r32
-31e4 Mañana_Es{13|3E9} 71m4 72r13
-32e4 Ayer_Fue{13|3E9} 73m4 74r13
-125r7 Hoy{13|10R9} 129r37
-126r7 Cumpleaños{13|10R9} 130r50
+10R9*Fecha 14e14 19|126r13 127r20
+11i7*Dia{7I9} 19|127m30
+12e7*Mes{4E9} 19|127m40
+13i7*Año{8I9} 19|127m54
+16U14*Mostrar_Dias 19|90s4
+17U14*Mostrar_Estaciones 19|117s4
+18V13*To_String{string} 19|130s27 131s40
+X 16 figuras.ads
+1K9*figuras 12e12 19|3w6 3r19
+3F9*Distancia<float> 19|10r11 11r13
+4F9*Area<float> 19|12r21
+8V13*Calcular_Area_Triangulo{4F9} 19|37s22
+X 19 main.adb
+8U11*Main 8b11 185l5 185t9
+10f4 Base{16|3F9} 37r46
+11f4 Altura{16|3F9} 37r52
+12f4 Area_Triangulo{16|4F9} 37m4 38r38
+16I9 Nota<integer> 19r18 46r34
+17I9 Numero_Muy_Alto<integer> 21r41 50r34
+19i4 Nota_Examen{16I9} 44m4 45m4 45r19
+21i4 Bits_reservados_Menos_1{integer} 52r15
+25M9 Angulo 26r11
+26m4 Giro{25M9} 60r27 61m4 61r12 62r45
+31e4 Hoy_Es{15|3E9} 70m4 71r13 72r33 74r32
+32e4 Mañana_Es{15|3E9} 72m4 73r13
+33e4 Ayer_Fue{15|3E9} 74m4 75r13
+126r7 Hoy{15|10R9} 130r37
+127r7 Cumpleaños{15|10R9} 131r50
+142I12 Nota<integer> 143r31 144r34 145r30 147r16
+143I15 Notas_Buenas{142I12} 160r15
+144I15 Notas_Aprobadas{142I12} 159r15
+145I15 Notas_Malas{142I12} 158r15
+147i7 Examen{142I12} 156m19 156r19 157r12
+172I15 Cantidad{positive} 174r11
+174i7 A{172I15} 179r12
+175i7 B{positive} 179m7
 

@@ -2,6 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with figuras; use figuras;
 with calendario; use calendario;
+with Ada.Integer_Text_IO;
 
 
 procedure Main is
@@ -128,6 +129,56 @@ begin
    begin
       Put_Line("Hoy es" & To_String(Hoy));
       Put_Line("Mi cumpleaños es el" & To_String(Cumpleaños));
+   end;
+
+   -----------------------------
+   Put_Line("");
+   -----------------------------
+
+   -- Subtipos
+   declare
+      use Ada.Integer_Text_IO;
+
+      type Nota is new Integer range 1..10;
+      subtype Notas_Buenas is Nota range 8..10;
+      subtype Notas_Aprobadas is Nota range 5..7;
+      subtype Notas_Malas is Nota range 1..4;
+
+      Examen : Nota;
+      --Mala_Nota : Notas_Malas;
+
+   begin
+      --Mala_Nota := Examen; -- Deja asignarlo y hace el checkeo en tiempo de ejecución
+                             -- Hace una conversion implícita
+                             --Put_Line(Examen'Image);
+
+      Put_Line("¿Qué nota sacaste?");
+      Get(Integer(Examen));
+      case Examen is
+         when Notas_Malas => Put_Line("Suspendistes");
+         when Notas_Aprobadas => Put_Line("Aprobastes");
+         when Notas_Buenas => Put_Line("Muy buena nota, enhorabuena");
+      end case;
+
+   end;
+
+
+
+   -----------------------------
+   Put_Line("");
+   -----------------------------
+
+   declare
+      subtype Cantidad is Positive;
+
+      A : Cantidad := 10;
+      B : Positive := 40;
+
+   begin
+
+      B := A;
+      Put_Line("Declaro un alias de tipo");
+
    end;
 
 
