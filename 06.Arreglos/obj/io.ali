@@ -9,12 +9,16 @@ RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_LOCAL_ALLOCATORS
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U io%b			io.adb			6bbc8e6d NE OO PK IL
+U io%b			io.adb			30bf35a4 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z system.concat_3%s	s-conca3.adb		s-conca3.ali
 Z system.exp_llli%s	s-expllli.ads		s-expllli.ali
@@ -30,10 +34,14 @@ Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
 D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
@@ -42,7 +50,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D io.ads		20221114094814 6e3922ff io%s
-D io.adb		20221116090232 0585ac92 io%b
+D io.adb		20221117092436 60868480 io%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
@@ -83,52 +91,58 @@ G c Z s b [get_integer_between io 24 13 none]
 G c Z s b [reemplazar io 32 14 none]
 G c Z s b [to_string io 37 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 13|1r6 1r23
-X 9 a-textio.ads
-58K13*Text_IO 725e16 13|1w10 1r27
-493V13*Get_Line{string} 14|9s30 45s40 66s40
-506U14*Put_Line 14|6s7 14s16 42s7 51s16 63s7 73s16 96s13 98s13
-X 13 io.ads
-3K9*io 44l5 44e7 14|1b14 127l5 127t7
-5V13*Get_Not_Empty_Line{string} 6>7 7>7 14|3b13 19t7
-6a7 Prompt{string} 14|3b32 6r16
-7a7 Error{string} 14|3b78 14r25
-9V13*Try_Convert_Integer{boolean} 10>7 10<22 14|21b13 28t7 48s17
-10a7 Texto{string} 14|21b33 24r42
-10i22 Texto_Como_Entero{integer} 14|21b48 24m7
-12V13*Try_Convert_Float{boolean} 13>7 13<22 14|30b13 37t7 70s17
-13a7 Texto{string} 14|30b31 33r39
-13f22 Texto_Como_Float{float} 14|30b46 33m7
-15V13*Get_Integer{integer} 16>7 17>7 14|39b13 56l8 56t19 93s23
-16a7 Prompt{string} 14|39b25 42r16
-17a7 Error{string} 14|39b71 51r25
-19V13*Get_Float{float} 20>7 21>7 22>7 14|58b13 78l8 78t17
-20a7 Prompt{string} 14|58b23 63r16
-21a7 Error{string} 14|59b23 73r25
-22e7 Separador_Decimales{character} 14|60b23 69r41
-24V13*Get_Integer_Between{integer} 25>8 26>7 27>7 28>7 29>7 30>7 14|80b13
-. 104t7
-25a8 Prompt{string} 14|81b8 93r35
-26i7 Max{integer} 14|82b7 95r26
-27i7 Min{integer} 14|83b7 97r29
-28a7 Empty_Error{string} 14|84b7 93r43
-29a7 Underflow_Error{string} 14|85b7 98r22
-30a7 Overflow_Error{string} 14|86b7 96r22
-32U14*Reemplazar 33=8 34>7 35>7 14|69s13 106b14 113t7
-33a8 Input{string} 14|106b25 108r16 109r14 110m13
-34e7 CaracterInicial{character} 14|106b47 109r25
-35e7 CaracterFinal{character} 14|106b78 110r25
-37V13*To_String{string} 38>8 39>7 40>7 14|115b13 125l8 125t17
-38f8 Input{float} 14|116b8 120r45 122r20 122r40
-39i7 Cantidad_Decimales{integer} 14|117b7 122r62
-40e7 Separador_Decimales{character} 14|118b8 121r11
-X 14 io.adb
-9a13 Texto{string} 11r17 12r23
-45a13 Numero_En_Texto{string} 48r37
-46i13 Valor{integer} 48m54 48r54 49r23
-66a13 Numero_En_Texto{string} 69r24 70r35
-67f13 Valor{float} 70m52 70r52 71r23
-88i7 Resultado{integer} 93m10 95r14 97r17 100r20
-108i11 I{integer} 109r20 110r19
-120a7 Result=122:9{string} 124r14
+16K9*Ada 20e8 17|1r6 1r23 18|1r6 1r23 2r6 2r29
+X 7 a-string.ads
+16K13*Strings 35e16 18|1w10 1r27 2r10 2r33
+33n37*Both{33E9} 18|124r95
+X 8 a-strfix.ads
+43K21*Fixed 1398e22 18|2w18 2r41
+1097V13*Trim{string} 18|124s11
+X 13 a-textio.ads
+58K13*Text_IO 725e16 17|1w10 1r27
+493V13*Get_Line{string} 18|11s30 47s40 68s40
+506U14*Put_Line 18|8s7 16s16 44s7 53s16 65s7 75s16 98s13 100s13
+X 17 io.ads
+3K9*io 44l5 44e7 18|3b14 129l5 129t7
+5V13*Get_Not_Empty_Line{string} 6>7 7>7 18|5b13 21t7
+6a7 Prompt{string} 18|5b32 8r16
+7a7 Error{string} 18|5b78 16r25
+9V13*Try_Convert_Integer{boolean} 10>7 10<22 18|23b13 30t7 50s17
+10a7 Texto{string} 18|23b33 26r42
+10i22 Texto_Como_Entero{integer} 18|23b48 26m7
+12V13*Try_Convert_Float{boolean} 13>7 13<22 18|32b13 39t7 72s17
+13a7 Texto{string} 18|32b31 35r39
+13f22 Texto_Como_Float{float} 18|32b46 35m7
+15V13*Get_Integer{integer} 16>7 17>7 18|41b13 58l8 58t19 95s23
+16a7 Prompt{string} 18|41b25 44r16
+17a7 Error{string} 18|41b71 53r25
+19V13*Get_Float{float} 20>7 21>7 22>7 18|60b13 80l8 80t17
+20a7 Prompt{string} 18|60b23 65r16
+21a7 Error{string} 18|61b23 75r25
+22e7 Separador_Decimales{character} 18|62b23 71r41
+24V13*Get_Integer_Between{integer} 25>8 26>7 27>7 28>7 29>7 30>7 18|82b13
+. 106t7
+25a8 Prompt{string} 18|83b8 95r35
+26i7 Max{integer} 18|84b7 97r26
+27i7 Min{integer} 18|85b7 99r29
+28a7 Empty_Error{string} 18|86b7 95r43
+29a7 Underflow_Error{string} 18|87b7 100r22
+30a7 Overflow_Error{string} 18|88b7 98r22
+32U14*Reemplazar 33=8 34>7 35>7 18|71s13 108b14 115t7
+33a8 Input{string} 18|108b25 110r16 111r14 112m13
+34e7 CaracterInicial{character} 18|108b47 111r25
+35e7 CaracterFinal{character} 18|108b78 112r25
+37V13*To_String{string} 38>8 39>7 40>7 18|117b13 127l8 127t17
+38f8 Input{float} 18|118b8 122r45 124r25 124r45
+39i7 Cantidad_Decimales{integer} 18|119b7 124r67
+40e7 Separador_Decimales{character} 18|120b8 123r11
+X 18 io.adb
+11a13 Texto{string} 13r17 14r23
+47a13 Numero_En_Texto{string} 50r37
+48i13 Valor{integer} 50m54 50r54 51r23
+68a13 Numero_En_Texto{string} 71r24 72r35
+69f13 Valor{float} 72m52 72r52 73r23
+90i7 Resultado{integer} 95m10 97r14 99r17 102r20
+110i11 I{integer} 111r20 112r19
+122a7 Result=124:9{string} 126r14
 

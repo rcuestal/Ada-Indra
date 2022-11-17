@@ -21,10 +21,13 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U main%b		main.adb		0f1de5e4 NE OO SU
+U main%b		main.adb		f1a017ba NE OO SU
 W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -34,7 +37,6 @@ Z system.concat_2%s	s-conca2.adb		s-conca2.ali
 Z system.concat_3%s	s-conca3.adb		s-conca3.ali
 Z system.concat_4%s	s-conca4.adb		s-conca4.ali
 Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
-Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
@@ -44,12 +46,14 @@ Z system.val_enum_8%s	s-vaenu8.ads		s-vaenu8.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chahan.ads		20210520051128 0ce1b450 ada.characters.handling%s
 D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
 D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
 D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
@@ -60,7 +64,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D io.ads		20221114094814 6e3922ff io%s
-D main.adb		20221116115810 cce24051 main%b
+D main.adb		20221117111410 9012f213 main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
@@ -72,14 +76,9 @@ D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
 D s-finmas.ads		20210520051132 1ab4dba8 system.finalization_masters%s
 D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
 D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
-D s-imager.ads		20210520051134 500b11a9 system.image_r%s
-D s-imageu.ads		20210520051134 525c30c6 system.image_u%s
-D s-imgflt.ads		20210520051134 78689de8 system.img_flt%s
 D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
-D s-imguns.ads		20210520051134 0e4da2ac system.img_uns%s
 D s-memory.ads		20210520051134 597d6634 system.memory%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
-D s-powflt.ads		20210520051134 46f7a1b9 system.powten_flt%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
 D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
@@ -97,87 +96,122 @@ D s-valuen.ads		20210520051134 72b74993 system.value_n%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 5 11 none]
-G r c none [main standard 5 11 none] [get_integer io 15 13 none]
-G r c none [main standard 5 11 none] [get_integer_between io 24 13 none]
+G c Z b b [main standard 7 11 none]
+G r c none [main standard 7 11 none] [get_integer io 15 13 none]
+G r c none [main standard 7 11 none] [get_integer_between io 24 13 none]
+G r c none [main standard 7 11 none] [to_string io 37 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 19|2r6 2r23 3r6 3r33
-X 8 a-string.ads
-16K13*Strings 35e16 19|3r10 3r37
-X 11 a-strunb.ads
-83K21*Unbounded 765e26 19|3w18 3r45
-88R9*Unbounded_String<5|43R9> 744e15 19|84r41 87r44
-104V13*To_Unbounded_String{88R9} 19|84r66
-117V13*To_String{string} 19|107s50
-X 14 a-textio.ads
-58K13*Text_IO 725e16 19|2w10 2r27
-463U14*Put 19|26s7 28s10 29s10 31s7 35s7 37s10 38s10 40s7 61s10 64s13 65s13
-. 68s10
-493V13*Get_Line{string} 19|105s49
-506U14*Put_Line 19|23s10 32s7 41s7 69s10 99s7 101s10 107s10 123s10 149s10
-. 151s13 158s10 170s10 185s7 186s7
-X 18 io.ads
-3K9*io 44e7 19|1w6 1r14
-15V13*Get_Integer{integer} 19|47s37 178s28
-24V13*Get_Integer_Between{integer} 19|53s39 138s30
-X 19 main.adb
-5U11*Main 5b11 205l5 205t9
-10A12 Arreglo_Numeros(positive)<integer> 12r17 13r21 14r29
-12a7 Numeros{10A12} 18m7 19m7 20m7 22r16 23r50
-13a7 Mas_Numeros{10A12} 27r16
-14a7 Todavia_Mas_Numeros{10A12} 36r16 36r43 37r14 38r21
-22i11 I{integer} 23r32 23r58
-27i11 N=27:16{positive} 28r14
-36i11 P{integer} 37r34 38r18
-46I15 Nota<integer> 47r85 53r34 55r47 56r47
-47A15 Examenes(46I15)<integer> 49r27
-49a10 Lista_Examenes{47A15} 52r19 53m13 63r19 63r41 64r17 65r24
-52i14 I{integer} 53r28
-63i14 I{integer} 64r32 65r21
-76E12 Dias_Semana 76e87 77r32 87r28 100r18 105r16 105r31
-76n28 Lunes{76E12}
-76n35 Martes{76E12}
-76n43 Miercoles{76E12}
-76n54 Jueves{76E12}
-76n62 Viernes{76E12}
-76n71 Sabado{76E12} 77r50
-76n79 Domingo{76E12} 77r58
-77E15 Fin_De_Semana{76E12}
-84V13 C=84:66{11|88R9} 95s10 95s23 95s37 95s53 95s68 95s81 95s96
-84a15 Input{string}
-87a4 Dias_En_Ingles(11|88R9) 107r60
-100e11 Dia{76E12} 101r19
-105e10 Dia{76E12} 107r19 107r75
-116I12 Nota<short_short_integer> 117r55
-117A12 Lista_Notas(116I12)<integer> 119r15
-119a7 Notas{117A12} 122r19
-122i11 Nota=122:19{116I12} 123r19
-130I12 Nota<integer> 132r52 138r25 140r47 141r47
-131F12 Nota_float<float> 165r55 167r18 168r25 168r39 174r19
-132A12 Examenes(130I12)<integer> 135r42 147r39 155r41 165r38 178r16
-135U17 Cargar_Notas 135b17 135<30 145l11 145t23 182s7
-135a30 Lista{132A12} 137r19 138m13
-137i14 I{integer} 138r19
-147U17 Mostrar_Notas 147b17 147>31 153l11 153t24 183s7
-147a31 Lista{132A12} 150r19 151r22
-150i14 I{integer} 151r28
-155V16 Mostrar_Mas_Alta{integer} 155b16 155>33 163l11 163t27 185s41
-155a33 Lista{132A12} 159r19 160r25 160r62
-156i7 Max{integer} 160r37 160m47 162r17
-159i14 I{integer} 160r31 160r68
-165V16 Mostrar_Media{131F12} 165b16 165>30 176l11 176t24 186s33
-165a30 Lista{132A12} 168r50 171r19 172r38
-166i10 Total{integer} 172m13 172r22 174r30
-167f10 Media{131F12} 174m10 175r17
-168f10 Num_Examenes{131F12} 174r46
-171i14 I{integer} 172r44
-178a7 Examen{132A12} 182m20 183r21 185r58 186r47
-X 20 system.ads
+16K9*Ada 20e8 21|2r6 2r23 3r6 3r33 4r6 4r29 5r6 5r35
+X 2 a-charac.ads
+16K13*Characters 18e19 21|5r10 5r39
+X 3 a-chahan.ads
+36K24*Handling 160e28 21|5w21 5r50
+71V13*To_Lower{string} 21|171s32
+X 9 a-string.ads
+16K13*Strings 35e16 21|3r10 3r37 4r10 4r33
+X 10 a-strfix.ads
+43K21*Fixed 1398e22 21|4w18 4r41
+X 13 a-strunb.ads
+83K21*Unbounded 765e26 21|3w18 3r45
+88R9*Unbounded_String<6|43R9> 744e15 21|86r41 89r44
+104V13*To_Unbounded_String{88R9} 21|86r66
+117V13*To_String{string} 21|109s50
+X 16 a-textio.ads
+58K13*Text_IO 725e16 21|2w10 2r27
+463U14*Put 21|28s7 30s10 31s10 33s7 37s7 39s10 40s10 42s7 63s10 66s13 67s13
+. 70s10
+493V13*Get_Line{string} 21|107s49
+506U14*Put_Line 21|25s10 34s7 43s7 71s10 101s7 103s10 109s10 125s10 188s10
+. 192s13 247s7 248s7
+X 20 io.ads
+3K9*io 44e7 21|1w6 1r14 136r11
+15V13*Get_Integer{integer} 21|49s37 240s28
+24V13*Get_Integer_Between{integer} 21|55s39 177s30
+37V13*To_String{string} 21|248s33
+X 21 main.adb
+7U11*Main 7b11 263l5 263t9
+12A12 Arreglo_Numeros(positive)<integer> 14r17 15r21 16r29
+14a7 Numeros{12A12} 20m7 21m7 22m7 24r16 25r50
+15a7 Mas_Numeros{12A12} 29r16
+16a7 Todavia_Mas_Numeros{12A12} 38r16 38r43 39r14 40r21
+24i11 I{integer} 25r32 25r58
+29i11 N=29:16{positive} 30r14
+38i11 P{integer} 39r34 40r18
+48I15 Nota<integer> 49r85 55r34 57r47 58r47
+49A15 Examenes(48I15)<integer> 51r27
+51a10 Lista_Examenes{49A15} 54r19 55m13 65r19 65r41 66r17 67r24
+54i14 I{integer} 55r28
+65i14 I{integer} 66r32 67r21
+78E12 Dias_Semana 78e87 79r32 89r28 102r18 107r16 107r31
+78n28 Lunes{78E12}
+78n35 Martes{78E12}
+78n43 Miercoles{78E12}
+78n54 Jueves{78E12}
+78n62 Viernes{78E12}
+78n71 Sabado{78E12} 79r50
+78n79 Domingo{78E12} 79r58
+79E15 Fin_De_Semana{78E12}
+86V13 C=86:66{13|88R9} 97s10 97s23 97s37 97s53 97s68 97s81 97s96
+86a15 Input{string}
+89a4 Dias_En_Ingles(13|88R9) 109r60
+102e11 Dia{78E12} 103r19
+107e10 Dia{78E12} 109r19 109r75
+118I12 Nota<short_short_integer> 119r55
+119A12 Lista_Notas(118I12)<integer> 121r15
+121a7 Notas{119A12} 124r19
+124i11 Nota=124:19{118I12} 125r19
+132I12 Nota<integer> 134r52 138r47 177r25 179r47 180r47
+133F12 Nota_float<float> 210r55 212r18 213r25 213r39 218r19
+134A12 Examenes(132I12)<integer> 174r42 186r39 201r41 210r38 223r43 223r60
+. 224r23 238r21 240r16 252r29
+135E12 T_Calificaciones 135e95 138r56 161r33
+135n33 Insuficiente{135E12} 139r21
+135n47 Suspenso{135E12} 144r26
+135n57 Aprobado{135E12} 140r24
+135n67 Bueno{135E12} 141r21
+135n74 Muy_bueno{135E12} 142r21
+135n85 Excelente{135E12} 143r22
+138a7 Nota_To_Clasificacion(135E12) 192r56
+146V16 Replace_Character{string} 146b16 146>34 147>34 148>34 159t10 171s41
+146a34 Input{string} 150r29
+147e34 From{character} 154r28
+148e34 To{character} 155r29
+150a10 Result{string} 153r19 154r16 155m16 158r17
+153i14 I{integer} 154r23 155r23
+161V16 To_String{string} 161b16 161>26 172t10 192s46
+161e26 Item{135E12} 162r29 171r69
+162a10 Result{string} 171r17 171r59
+174U17 Cargar_Notas 174b17 174<30 184l11 184t23 244s7
+174a30 Lista{134A12} 176r19 177m13
+176i14 I{integer} 177r19
+186U17 Mostrar_Notas 186b17 186>31 186>49 199l11 199t24 245s7 254s10
+186a31 Lista{134A12} 191r19 192r22 192r78
+186a49 Mensaje{string} 188r19
+191i14 I{integer} 192r28 192r84
+201V16 Mostrar_Mas_Alta{integer} 201b16 201>33 208l11 208t27 247s41
+201a33 Lista{134A12} 204r19 205r25 205r62
+202i7 Max{integer} 205r37 205m47 207r17
+204i14 I{integer} 205r31 205r68
+210V16 Mostrar_Media{133F12} 210b16 210>30 220l11 220t24 248s49
+210a30 Lista{134A12} 213r50 215r19 216r38
+211i10 Total{integer} 216m13 216r22 218r36
+212f10 Media{133F12} 218m10 219r17
+213f10 Num_Examenes{133F12} 218r51
+215i14 I{integer} 216r44
+223V16 Examenes_Aprobados{134A12} 223b16 223>35 234t10 252s41
+223a35 Lista{134A12} 224r35 227r19 228r16 230r39
+224a11 Aprobados{134A12} 230m16 233r18
+225i11 Contador{integer} 229m16 229r28 230r26 233r31
+227i14 I{integer} 228r22 230r45
+238a7 Array_Vacio{134A12}
+240a7 Examen{134A12} 244m20 245r21 247r58 248r63 252r60
+252a10 Examen_Aprobados{134A12} 254r24
+X 22 system.ads
 67M9*Address
-X 36 s-memory.ads
-53V13*Alloc{20|67M9} 103i<c,__gnat_malloc>22
+X 34 s-memory.ads
+53V13*Alloc{22|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{20|67M9} 105i<c,__gnat_realloc>22
-X 44 s-stalib.adb
+76V13*Realloc{22|67M9} 105i<c,__gnat_realloc>22
+X 41 s-stalib.adb
 89U14 Break_Start 90i<c,__gnat_break_start>22
 

@@ -1,3 +1,5 @@
+with Ada.Strings; use Ada.Strings;
+with ada.Strings.Fixed; use Ada.Strings.Fixed;
 package body io is
 
    function Get_Not_Empty_Line(Prompt:String := "Ingresa un texto no vacio"; Error:String := "Ha ingresado un texto vacío, vuelva a intentarlo") return String is
@@ -119,7 +121,7 @@ package body io is
 
       Result :String := Integer(Float'Floor(Input))'Image 
         & Separador_Decimales 
-        & Integer((Input - Float'Floor(Input)) * Float(10 ** Cantidad_Decimales))'Image ;
+        & Trim(Integer((Input - Float'Floor(Input)) * Float(10 ** Cantidad_Decimales))'Image, Both) ;
    begin
       return result;
    end To_String;
