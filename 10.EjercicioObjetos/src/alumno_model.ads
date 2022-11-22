@@ -4,7 +4,6 @@ with Ada.Containers.Vectors;
 
 package Alumno_Model is
    
-   -- type Nota is array (Positive range <>) of Integer;
    type C_Persona is tagged private;   
    type Persona is access C_Persona'Class;
    
@@ -22,7 +21,7 @@ package Alumno_Model is
    procedure Rendir_Examen(This: out C_Persona; Value:Integer);
    -----------------------------------------------
    
-   function Calcular_Promedio(This: out C_Persona) return Float;
+   function Calcular_Promedio(This: C_Persona) return Float;
    
    private 
    

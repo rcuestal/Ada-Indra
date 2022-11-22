@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#c6f3d318#;
+   u00001 : constant Version_32 := 16#245c9300#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -314,9 +314,9 @@ package ada_main is
    pragma Export (C, u00136, "system__file_ioS");
    u00137 : constant Version_32 := 16#d265cbbc#;
    pragma Export (C, u00137, "system__file_control_blockS");
-   u00138 : constant Version_32 := 16#18635057#;
+   u00138 : constant Version_32 := 16#36ddc94a#;
    pragma Export (C, u00138, "alumno_modelB");
-   u00139 : constant Version_32 := 16#394ea32c#;
+   u00139 : constant Version_32 := 16#09c10ed6#;
    pragma Export (C, u00139, "alumno_modelS");
    u00140 : constant Version_32 := 16#35d6ef80#;
    pragma Export (C, u00140, "system__storage_poolsB");
@@ -350,6 +350,18 @@ package ada_main is
    pragma Export (C, u00154, "system__strings__stream_opsB");
    u00155 : constant Version_32 := 16#ec029138#;
    pragma Export (C, u00155, "system__strings__stream_opsS");
+   u00156 : constant Version_32 := 16#6424aad3#;
+   pragma Export (C, u00156, "system__img_fltS");
+   u00157 : constant Version_32 := 16#1b28662b#;
+   pragma Export (C, u00157, "system__float_controlB");
+   u00158 : constant Version_32 := 16#cf061228#;
+   pragma Export (C, u00158, "system__float_controlS");
+   u00159 : constant Version_32 := 16#2549028f#;
+   pragma Export (C, u00159, "system__img_utilB");
+   u00160 : constant Version_32 := 16#44802e3b#;
+   pragma Export (C, u00160, "system__img_utilS");
+   u00161 : constant Version_32 := 16#690df0ad#;
+   pragma Export (C, u00161, "system__powten_fltS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -361,6 +373,8 @@ package ada_main is
    --  system.address_operations%b
    --  system.atomic_counters%s
    --  system.atomic_counters%b
+   --  system.float_control%s
+   --  system.float_control%b
    --  system.img_int%s
    --  system.io%s
    --  system.io%b
@@ -369,6 +383,7 @@ package ada_main is
    --  system.crtl%s
    --  interfaces.c_streams%s
    --  interfaces.c_streams%b
+   --  system.powten_flt%s
    --  system.storage_elements%s
    --  system.storage_elements%b
    --  system.stack_checking%s
@@ -383,6 +398,8 @@ package ada_main is
    --  system.traceback_entries%b
    --  system.unsigned_types%s
    --  system.img_uns%s
+   --  system.img_util%s
+   --  system.img_util%b
    --  system.wch_con%s
    --  system.wch_con%b
    --  system.wch_jis%s
@@ -472,6 +489,7 @@ package ada_main is
    --  system.fat_flt%s
    --  system.fat_lflt%s
    --  system.fat_llf%s
+   --  system.img_flt%s
    --  system.put_images%s
    --  system.put_images%b
    --  ada.streams%s

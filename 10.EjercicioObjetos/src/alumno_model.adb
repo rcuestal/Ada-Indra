@@ -19,7 +19,7 @@ package body Alumno_Model is
       Append(This.Lista,Value);
    end;
    
-   function Calcular_Promedio(This: out C_Persona) return Float is
+   function Calcular_Promedio(This: C_Persona) return Float is
       Total : Integer := 0;
       Media : Float;
       Num_Examenes : Integer := Integer(Length(This.Lista));
