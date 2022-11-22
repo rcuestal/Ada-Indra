@@ -13,8 +13,10 @@ package generic_io is
    function Get_Discrete
      (Prompt:String := Default_Prompt;
       Error:String := Default_Error_Message) return Tipo;
-
-
+   
+   function To_String(Item:Tipo) return String;
+   
+   procedure Show_Discrete;
    
 
 end generic_io;

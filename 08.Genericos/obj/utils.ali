@@ -6,26 +6,18 @@ P ZX
 
 RN
 RV NO_ENUMERATION_MAPS
-RV NO_EXCEPTION_HANDLERS
-RV NO_EXCEPTIONS
 RV NO_IO
-RV NO_DYNAMIC_SIZED_OBJECTS
-RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U generic_io%b		generic_io.adb		0a910e01 NE OO PK GE IL
+U utils%b		utils.adb		fc7904bb NE OO PK
 W ada%s			ada.ads			ada.ali
-W ada.characters%s	a-charac.ads		a-charac.ali
-W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
-U generic_io%s		generic_io.ads		c01ad7eb BN EE NE OO PK GE IL
+U utils%s		utils.ads		5b9c7d35 BN EE NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
-D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
-D a-chahan.ads		20210520051128 0ce1b450 ada.characters.handling%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
@@ -35,8 +27,6 @@ D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D generic_io.ads	20221121082448 c01ad7eb generic_io%s
-D generic_io.adb	20221121084542 689eb8d7 generic_io%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -55,37 +45,26 @@ D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D utils.ads		20221121095628 5b9c7d35 utils%s
+D utils.adb		20221121095618 0911ace3 utils%b
 G a e
-G c Z s b [generic_io standard 4 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 14|1r6 1r23 2r6 2r35
-X 2 a-charac.ads
-16K13*Characters 18e19 14|2r10 2r39
-X 3 a-chahan.ads
-36K24*Handling 160e28 14|2w21 2r50
-71V13*To_Lower{string} 14|43s33
-X 11 a-textio.ads
-58K13*Text_IO 725e16 14|1w10 1r27
-463U14*Put 14|48s7 50s10 51s10 53s7
-493V13*Get_Line{string} 14|28s38
-506U14*Put_Line 14|21s7 35s13 54s7
-X 13 generic_io.ads
-2E9 Tipo 11r29 15r53 17r28 14|8r29 10r27 18r53 22r12 29r21 41r28 49r23 49r35
-. 51r30
-4k9*generic_io 2z9 22l5 22e15 14|4b14 58l5 58t15
-6a4*Default_Prompt{string} 14r24 14|17r24
-7a4*Default_Error_Message{string} 15r23 14|18r23
-9V13*Try_Convert{boolean} 10>7 11<7 14|6b13 14t7 31s17
-10a7 Valor_Como_String{string} 14|7b7 10r38
-11*7 Valor_Convertido{2E9} 14|8b7 10m7
-13V13*Get_Discrete{2E9} 14>7 15>7 14|16b13 39t7
-14a7 Prompt{string} 14|17b7 21r16
-15a7 Error{string} 14|18b7 35r22
-17V13*To_String{string} 17>23 14|41b13 44t7 50s14
-17*23 Item{2E9} 14|41b23 43r14 43r42 43r56
-19U14*Show_Discrete 14|23s10 46b14 55t7
-X 14 generic_io.adb
-28a13 Algo_En_Texto{string} 31r29
-29*13 Valor{13|2E9} 31m44 31r44 32r23
-49e11 EnumItem 50r24 51r18
+16K9*Ada 20e8 30|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 30|1w10 1r27
+506U14*Put_Line 30|15s10
+X 29 utils.ads
+1K9*Utils 13l5 13e10 30|3b14 20l5 20t10
+4+12 T 5r39 30|5r39 6r13
+5u14*swap 5=19 5=25 30|5b14 10t7
+5*19 Left{4+12} 30|5b19 6r18 8m7
+5*25 Right{4+12} 30|5b25 8r15 9m7
+8E12 T 9r37 10r34 30|12r34
+9V21 To_String{string} 9>31 30|14s23
+9*31 Value{8E12}
+10u14*Show_Vertical 10>28 30|12b14 17t7
+10*28 Value{8E12} 30|12b28 14r33
+X 30 utils.adb
+6*7 Aux{29|4+12} 9r16
+14e11 Caracter{character} 15r19
 

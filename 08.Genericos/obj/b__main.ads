@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#61fadddc#;
+   u00001 : constant Version_32 := 16#360ba21a#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -280,9 +280,9 @@ package ada_main is
    pragma Export (C, u00119, "system__finalization_rootS");
    u00120 : constant Version_32 := 16#d265cbbc#;
    pragma Export (C, u00120, "system__file_control_blockS");
-   u00121 : constant Version_32 := 16#bdcbb7f8#;
+   u00121 : constant Version_32 := 16#0a910e01#;
    pragma Export (C, u00121, "generic_ioB");
-   u00122 : constant Version_32 := 16#af5f37ec#;
+   u00122 : constant Version_32 := 16#c01ad7eb#;
    pragma Export (C, u00122, "generic_ioS");
    u00123 : constant Version_32 := 16#30bf35a4#;
    pragma Export (C, u00123, "ioB");
@@ -322,12 +322,18 @@ package ada_main is
    pragma Export (C, u00140, "system__val_intS");
    u00141 : constant Version_32 := 16#a5b55d2f#;
    pragma Export (C, u00141, "system__val_unsS");
-   u00142 : constant Version_32 := 16#071824fe#;
-   pragma Export (C, u00142, "system__val_enum_8S");
-   u00143 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00143, "system__memoryB");
-   u00144 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00144, "system__memoryS");
+   u00142 : constant Version_32 := 16#9761820e#;
+   pragma Export (C, u00142, "system__img_charB");
+   u00143 : constant Version_32 := 16#b3ce09f3#;
+   pragma Export (C, u00143, "system__img_charS");
+   u00144 : constant Version_32 := 16#fc7904bb#;
+   pragma Export (C, u00144, "utilsB");
+   u00145 : constant Version_32 := 16#5b9c7d35#;
+   pragma Export (C, u00145, "utilsS");
+   u00146 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00146, "system__memoryB");
+   u00147 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00147, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -337,6 +343,8 @@ package ada_main is
    --  system%s
    --  system.float_control%s
    --  system.float_control%b
+   --  system.img_char%s
+   --  system.img_char%b
    --  system.img_int%s
    --  system.io%s
    --  system.io%b
@@ -463,7 +471,6 @@ package ada_main is
    --  ada.finalization%s
    --  system.file_io%s
    --  system.file_io%b
-   --  system.val_enum_8%s
    --  system.val_flt%s
    --  system.val_uns%s
    --  system.val_int%s
@@ -473,6 +480,8 @@ package ada_main is
    --  generic_io%b
    --  io%s
    --  io%b
+   --  utils%s
+   --  utils%b
    --  main%b
    --  END ELABORATION ORDER
 

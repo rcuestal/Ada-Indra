@@ -1,4 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Characters.Handling; use Ada.Characters.Handling;
 
 package body generic_io is
    
@@ -18,6 +19,10 @@ package body generic_io is
       
    begin
       Put_Line(Prompt);
+      if ((Tipo'Range_Length) < 50) then
+         Show_Discrete;
+      end if;
+
       loop
          declare
             Algo_En_Texto: String := Get_Line;
@@ -32,7 +37,22 @@ package body generic_io is
          end;
       end loop;
    end;
-
    
+   function To_String(Item:Tipo) return String is
+   begin
+      return Item'Image(1..1) & To_Lower(Item'Image(2..Item'Image'Length));
+   end;
 
+   procedure Show_Discrete is
+   begin
+      Put("(");
+      for EnumItem in Tipo'First..Tipo'Last loop
+         Put(To_String(EnumItem));
+         Put(if (EnumItem /= Tipo'Last) then "," else "");
+      end loop;
+      Put(")");
+      Put_Line("");
+   end;
+   
+   
 end generic_io;

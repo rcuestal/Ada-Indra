@@ -1,6 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Containers.Vectors;
 with io; use io;
+with Utils;
 with generic_io;
 
 procedure Main is
@@ -77,29 +78,64 @@ begin
 
    --------------------------------------------------
 
+   --  declare
+   --     use Utils;
+   --
+   --     type Dias is (Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo);
+   --
+   --     package Dias_IO is new generic_io(Tipo => Dias);
+   --     use Dias_IO;
+   --
+   --     procedure Show_Dias renames Show_Discrete;
+   --     procedure Swap_Dias is new Swap(Dias);
+   --
+   --     procedure Show_V is new Show_Vertical(T => Dias,
+   --                                           -- To_String => Dias'Image);
+   --                                           To_String => Dias_IO.To_String);
+   --
+   --
+   --     Dia : Dias;
+   --     Otro_Dia : Dias;
+   --
+   --  begin
+   --
+   --     -- Put_Line(PP'Image);
+   --
+   --     -- Put_Line("Ingrese un dia");
+   --
+   --     --  if (Try_Convert(Get_Line, Dia)) then
+   --     --     Put_Line("Has introducido un dia correctamente");
+   --     --  else
+   --     --     Put_Line("El valor introducido no es un dia");
+   --     --  end if;
+   --
+   --     Dia := Get_Discrete("Ingrese un dia");
+   --     Otro_Dia := Get_Discrete("Ingrese otro dia");
+   --
+   --     Show_V(Dia);
+   --
+   --     Swap_Dias(Dia,Otro_Dia);
+   --     Put_Line("Los dias intercambiados son: "
+   --              & To_String(Dia)
+   --              & " y "
+   --              & To_String(Otro_Dia));
+   --
+   --
+   --
+   --     -- Show_Dias;
+   --
+   --
+   --  end;
+
    declare
+      use Utils;
+      procedure Show_Vertical_Integer is new Show_Vertical(T => Integer,
+                                                           To_String => Integer'Image);
 
-      type Dias is (Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo);
-
-      package Dias_IO is new generic_io(Tipo => Dias);
-      use Dias_IO;
-
-      Dia : Dias;
+      N : Integer := 1234;
 
    begin
-
-         -- Put_Line("Ingrese un dia");
-
-         --  if (Try_Convert(Get_Line, Dia)) then
-         --     Put_Line("Has introducido un dia correctamente");
-         --  else
-         --     Put_Line("El valor introducido no es un dia");
-         --  end if;
-
-      Dia := Get_Discrete("Ingrese un dia");
-      Put_Line(Dia'Image);
-
-
+      Show_Vertical_Integer(N);
    end;
 
 

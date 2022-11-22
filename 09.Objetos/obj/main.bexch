@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\default.gpr
+20221121104030 c94acced3f4f3ce7441fa35ab744fc96
+[BOUND OBJECT FILES]
+C:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\obj\p_heroe.o
+C:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\obj\p_persona.o
+C:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\obj\p_triangulo.o
+C:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\obj\
+-LC:\Users\rcuestal\Desktop\IndraNoviembre\09.Objetos\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
