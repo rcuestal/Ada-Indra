@@ -1,5 +1,1 @@
-alumno_model.adb:25:33: error: prefix for "Last" attribute may not be private type
-alumno_model.adb:27:16: error: prefix for "Range" attribute may not be private type
-alumno_model.adb:28:39: error: ambiguous operand in conversion
-alumno_model.adb:28:39: error: possible interpretation at a-convec.ads:294, instance at alumno_model.ads:12
-alumno_model.adb:28:39: error: possible interpretation at a-convec.ads:293, instance at alumno_model.ads:12
+alumno_model.adb:22:31: warning: formal parameter "This" is read but never assigned [-gnatwf]

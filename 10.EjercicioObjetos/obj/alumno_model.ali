@@ -11,6 +11,7 @@ RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_LOCAL_ALLOCATORS
@@ -21,7 +22,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U alumno_model%b	alumno_model.adb	ff14add2 OO PK
+U alumno_model%b	alumno_model.adb	18635057 OO PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -33,7 +34,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U alumno_model%s	alumno_model.ads	fe8ba64f EE OO PF PK
+U alumno_model%s	alumno_model.ads	394ea32c EE OO PF PK
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -85,8 +86,8 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
-D alumno_model.ads	20221122102348 0e74f94f alumno_model%s
-D alumno_model.adb	20221122102332 f160549d alumno_model%b
+D alumno_model.ads	20221122102806 c9b1fc2c alumno_model%s
+D alumno_model.adb	20221122103836 d1d2ac7b alumno_model%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -251,20 +252,23 @@ G c Z s s [append_slow_path alumno_model__notas_array_list 47 14 12_4]
 G c Z s b [create alumno_model 19 13 none]
 G c Z s b [get_nombre alumno_model 21 13 none]
 G c Z s b [rendir_examen alumno_model 22 14 none]
-G c Z s s [c_personaDA alumno_model 27 9 none]
-G c Z s s [c_personaDF alumno_model 27 9 none]
-G c Z s s [c_personaDI alumno_model 27 9 none]
-G c Z s s [c_personaIP alumno_model 27 9 none]
+G c Z s b [calcular_promedio alumno_model 25 13 none]
+G c Z s s [c_personaDA alumno_model 29 9 none]
+G c Z s s [c_personaDF alumno_model 29 9 none]
+G c Z s s [c_personaDI alumno_model 29 9 none]
+G c Z s s [c_personaIP alumno_model 29 9 none]
 X 1 ada.ads
 16K9*Ada 20e8 24|1r6 1r23 2r6 2r33 3r6 12r36
 X 4 a-contai.ads
 16K13*Containers 28e19 24|3r10 12r40
+22I9*Count_Type<integer>
 X 8 a-convec.ads
 62I9 Index_Type 24|14r7
 63+9 Element_Type 24|13r7
 74k24*Vectors 875e27 24|3w21 12r51
-91R9*Vector<11|43R9> 24|29r32[12]
+91R9*Vector<11|43R9> 24|31r32[12]
 122r4*Empty_Vector{91R9[24|12]} 25|7r37[24|12]
+175V13*Length{4|22I9} 25|25s41[24|12]
 483U14*Append 25|19s7[24|12]
 X 13 a-iteint.ads
 24h9 Forward_Iterator
@@ -273,16 +277,17 @@ X 15 a-string.ads
 16K13*Strings 35e16 24|2r10 2r37
 X 18 a-strunb.ads
 83K21*Unbounded 765e26 24|2w18 2r45
-88R9*Unbounded_String<11|43R9> 744e15 24|28r15
+88R9*Unbounded_String<11|43R9> 744e15 24|30r15
 104V13*To_Unbounded_String{88R9} 25|6s39
 117V13*To_String{string} 25|14s14
 X 21 a-textio.ads
 58K13*Text_IO 725e16 24|1w10 1r27
 X 24 alumno_model.ads
-5K9*Alumno_Model 27E9 32l5 32e17 25|1b14 22l5 22t17
-8R9*C_Persona 9r27 21p13 21r29 22p14 22r38 27c9 30e14 25|6r18 12r29 17r38
+5K9*Alumno_Model 29E9 34l5 34e17 25|1b14 34l5 34t17
+8R9*C_Persona 9r27 21p13 21r29 22p14 22r38 25p13 25r41 29c9 32e14 25|6r18
+. 12r29 17r38 22r41
 9P9*Persona(8R9) 19r42 25|3r42
-12K12*Notas_Array_List[8|74] 16r8 29r15
+12K12*Notas_Array_List[8|74] 16r8 31r15
 19V13*Create{9P9} 19>20 25|3b13 8t7
 19a20 Nombre{string} 25|3b20 6r59
 21V13*Get_Nombre{string} 21>24 25|12b13 15t7
@@ -290,8 +295,15 @@ X 24 alumno_model.ads
 22U14*Rendir_Examen 22<28 22>49 25|17b14 20t7
 22r28 This{8R9} 25|17b28 19m14 19r14
 22i49 Value{integer} 25|17b49 19r25
-28r7*Nombre{18|88R9} 25|6m29 14r29
-29r7*Lista{8|91R9[12]} 25|7m28 19m19
+25V13*Calcular_Promedio{float} 25<31 25|22b13 32l8 32t25
+25r31 This{8R9} 25|22b31 25r48 27r16
+30r7*Nombre{18|88R9} 25|6m29 14r29
+31r7*Lista{8|91R9[12]} 25|7m28 19m19 25r53 27r21
+X 25 alumno_model.adb
+23i7 Total{integer} 28m10 28r19 30r22
+24f7 Media{float} 30m7 31r14
+25i7 Num_Examenes{integer} 30r37
+27i11 I{integer} 28r35
 X 28 system.ads
 67M9*Address
 X 36 s-memory.ads

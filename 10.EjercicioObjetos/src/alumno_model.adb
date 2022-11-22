@@ -22,10 +22,10 @@ package body Alumno_Model is
    function Calcular_Promedio(This: out C_Persona) return Float is
       Total : Integer := 0;
       Media : Float;
-      Num_Examenes : Integer := This.Lista'Last;
+      Num_Examenes : Integer := Integer(Length(This.Lista));
    begin
-      for I in This.Lista'Range loop
-         Total := Total + Integer(This.Lista(I));
+      for I of This.Lista loop
+         Total := Total + Integer(I);
       end loop;
       Media := Float(Total) / Float(Num_Examenes);
       return(Media);
