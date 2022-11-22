@@ -22,6 +22,8 @@ package Alumno_Model is
    procedure Rendir_Examen(This: out C_Persona; Value:Integer);
    -----------------------------------------------
    
+   function Calcular_Promedio(This: out C_Persona) return Float;
+   
    private 
    
    type C_Persona is tagged record
