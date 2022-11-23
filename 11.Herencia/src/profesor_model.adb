@@ -1,10 +1,16 @@
 package body Profesor_Model is
 
    function Create(Nombre:String) return Profesor is   
+      Result : Profesor := new C_Profesor;
    begin
-      return new C_Profesor'(C_Persona with
-                             Nombre => To_Unbounded_String(Nombre),
-                             Num_Cursos => 0);
+      
+      Result.Nombre := To_Unbounded_String(Nombre);
+      Result.Num_Cursos := 0;
+      return Result;
+      
+      --  return new C_Profesor'(C_Persona with
+      --                         Nombre => To_Unbounded_String(Nombre),
+      --                         Num_Cursos => 0);
    end;
    
    function To_String(This: in C_Profesor) return String is

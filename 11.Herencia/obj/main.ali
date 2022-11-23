@@ -33,7 +33,7 @@ RV NO_IMPLICIT_ALIASING
 RV NO_IMPLICIT_LOOPS
 RV STATIC_DISPATCH_TABLES
 
-U main%b		main.adb		c33184b5 NE OO SU
+U main%b		main.adb		80fca00e NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -91,14 +91,14 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
-D alumno_model.ads	20221123110222 180f0ddc alumno_model%s
+D alumno_model.ads	20221123115408 7a7b73a8 alumno_model%s
 D aula.ads		20221123084650 1b0e5030 aula%s
 D aula.adb		20221123083944 da6e3958 aula%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D main.adb		20221123105840 ad779e9a main%b
-D persona_model.ads	20221123110042 90212ed5 persona_model%s
-D profesor_model.ads	20221123110234 b218fbdb profesor_model%s
+D persona_model.ads	20221123115302 0d62bba1 persona_model%s
+D profesor_model.ads	20221123115424 0ee23460 profesor_model%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-addima.ads		20210520051132 a1ec9d3a system.address_image%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
@@ -164,7 +164,7 @@ X 26 alumno_model.ads
 9F9*Promedio_Notas<float>
 12P9*Alumno(11R9) 31|10r14 14r29 24r54
 14V13*Create{12P9} 31|10s24
-15V24*To_String{string}<32|11p13> 31|16R18 33R21
+15V24*To_String{string}<32|15p13> 31|16R18 33R21
 16U14*Rendir_Examen 31|35R12 36R12 37R12 38R12 39R12
 17V13*Calcular_Promedio{9F9} 31|42R22
 X 27 aula.ads
@@ -183,12 +183,12 @@ X 31 main.adb
 19p28 P{33|10P9} 21r16
 24K12 Curso_Ada[27|6] 46r4 47r4
 X 32 persona_model.ads
-3K9*Persona_Model 31|6w6 6r25 32|19e18
+3K9*Persona_Model 31|6w6 6r25 32|23e18
 X 33 profesor_model.ads
 5K9*Profesor_Model 31|5w6 5r26 33|22e19
 10P9*Profesor(9R9) 31|11r14 19r31
 12V13*Create{10P9} 31|11s26
-13V24*To_String{string}<32|11p13> 31|21R18 50R21
+13V24*To_String{string}<32|15p13> 31|21R18 50R21
 14U14*Dictar_Curso 31|51R12
 X 34 system.ads
 67M9*Address

@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#c33184b5#;
+   u00001 : constant Version_32 := 16#80fca00e#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -336,9 +336,9 @@ package ada_main is
    pragma Export (C, u00147, "system__val_llfS");
    u00148 : constant Version_32 := 16#19055f44#;
    pragma Export (C, u00148, "system__exn_llfS");
-   u00149 : constant Version_32 := 16#c1c06f9f#;
+   u00149 : constant Version_32 := 16#0fab721d#;
    pragma Export (C, u00149, "alumno_modelB");
-   u00150 : constant Version_32 := 16#78d17c09#;
+   u00150 : constant Version_32 := 16#87e69709#;
    pragma Export (C, u00150, "alumno_modelS");
    u00151 : constant Version_32 := 16#fd83e873#;
    pragma Export (C, u00151, "system__concat_2B");
@@ -384,9 +384,9 @@ package ada_main is
    pragma Export (C, u00171, "system__stream_attributes__xdrB");
    u00172 : constant Version_32 := 16#ce9a2a0c#;
    pragma Export (C, u00172, "system__stream_attributes__xdrS");
-   u00173 : constant Version_32 := 16#06839412#;
+   u00173 : constant Version_32 := 16#9bc00166#;
    pragma Export (C, u00173, "persona_modelB");
-   u00174 : constant Version_32 := 16#93137cf2#;
+   u00174 : constant Version_32 := 16#0e50e986#;
    pragma Export (C, u00174, "persona_modelS");
    u00175 : constant Version_32 := 16#021224f8#;
    pragma Export (C, u00175, "system__pool_globalB");
@@ -404,9 +404,9 @@ package ada_main is
    pragma Export (C, u00181, "aulaB");
    u00182 : constant Version_32 := 16#4637887a#;
    pragma Export (C, u00182, "aulaS");
-   u00183 : constant Version_32 := 16#628403a3#;
+   u00183 : constant Version_32 := 16#df30ccc0#;
    pragma Export (C, u00183, "profesor_modelB");
-   u00184 : constant Version_32 := 16#8fff5244#;
+   u00184 : constant Version_32 := 16#ae46088b#;
    pragma Export (C, u00184, "profesor_modelS");
 
    --  BEGIN ELABORATION ORDER

@@ -17,14 +17,14 @@ RV NO_LOCAL_ALLOCATORS
 RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U profesor_model%b	profesor_model.adb	628403a3 OO PK
+U profesor_model%b	profesor_model.adb	df30ccc0 OO PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
 Z system%s		system.ads		system.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
@@ -35,7 +35,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U profesor_model%s	profesor_model.ads	8fff5244 EE OO PF PK
+U profesor_model%s	profesor_model.ads	ae46088b EE OO PF PK
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
@@ -53,7 +53,6 @@ Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
-Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
@@ -73,9 +72,9 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D persona_model.ads	20221123110042 90212ed5 persona_model%s
-D profesor_model.ads	20221123110234 b218fbdb profesor_model%s
-D profesor_model.adb	20221123104442 d09cf878 profesor_model%b
+D persona_model.ads	20221123115302 0d62bba1 persona_model%s
+D profesor_model.ads	20221123115424 0ee23460 profesor_model%s
+D profesor_model.adb	20221123115706 d1d2f8a0 profesor_model%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
@@ -114,40 +113,40 @@ G c Z s s [c_profesorDA profesor_model 17 9 none]
 G c Z s s [c_profesorDF profesor_model 17 9 none]
 G c Z s s [c_profesorDI profesor_model 17 9 none]
 G c Z s s [c_profesorIP profesor_model 17 9 none]
-G r s c_persona [create profesor_model 12 13 none] [c_personaIP persona_model 15 9 none]
-G r j c_persona [c_profesorDA profesor_model 17 9 none] [c_personaDA persona_model 15 9 none]
-G r k c_persona [c_profesorDF profesor_model 17 9 none] [c_personaDF persona_model 15 9 none]
-G r s c_persona [c_profesorIP profesor_model 17 9 none] [c_personaIP persona_model 15 9 none]
-G r k c_persona [c_profesorIP profesor_model 17 9 none] [c_personaDF persona_model 15 9 none]
+G r s c_persona [create profesor_model 12 13 none] [c_personaIP persona_model 6 9 none]
+G r j c_persona [c_profesorDA profesor_model 17 9 none] [c_personaDA persona_model 6 9 none]
+G r k c_persona [c_profesorDF profesor_model 17 9 none] [c_personaDF persona_model 6 9 none]
+G r s c_persona [c_profesorIP profesor_model 17 9 none] [c_personaIP persona_model 6 9 none]
 X 1 ada.ads
 16K9*Ada 20e8 20|1r6 1r33 2r6 2r23
 X 8 a-string.ads
 16K13*Strings 35e16 20|1r10 1r37
 X 11 a-strunb.ads
 83K21*Unbounded 765e26 20|1w18 1r45
-88R9*Unbounded_String<5|43R9> 744e15 20|18r16
-104V13*To_Unbounded_String{88R9} 21|6s40
-117V13*To_String{string} 21|12s42
+104V13*To_Unbounded_String{88R9} 21|7s24
+117V13*To_String{string} 21|18s42
 X 14 a-textio.ads
 58K13*Text_IO 725e16 20|2w10 2r27
-506U14*Put_Line 21|18s7
+506U14*Put_Line 21|24s7
 X 19 persona_model.ads
-3K9*Persona_Model 19e18 20|3w6 3r25
-5H9*C_Persona 17e14 20|9r27 17r27 21|5r30
+3K9*Persona_Model 23e18 20|3w6 3r25
+6H9*C_Persona 8e14 20|9r27 17r27
+7r7*Nombre{11|88R9} 21|7m14 18r57
 X 20 profesor_model.ads
-5K9*Profesor_Model 17E9 22l5 22e19 21|1b14 21l5 21t19
+5K9*Profesor_Model 17E9 22l5 22e19 21|1b14 27l5 27t19
 7I9*Cursos_Dictado<integer> 19r20
-9R9*C_Profesor<19|5R9> 10r28 13P24 13r43 14p14 14r40 17c9 20e14 21|5r18 10r32
-. 15r40
-10P9*Profesor(9R9) 12r42 21|3r42
-12V13*Create{10P9} 12>20 21|3b13 8t7
-12a20 Nombre{string} 21|3b20 6r60
-13V24*To_String{string}<19|11p13> 13>34 21|10b13 13t7
-13r34 This{9R9} 21|10b23 12r52
-14U14*Dictar_Curso 14=27 21|15b14 19t7
-14r27 This{9R9} 21|15b27 17m7 17r26 18r53
-18r7 Nombre{11|88R9} 21|6m30 12r57
-19i7 Num_Cursos{7I9} 21|7m30 17m12 17r31 18r58
+9R9*C_Profesor<19|6R9> 10r28 13P24 13r43 14p14 14r40 17c9 20e14 21|4r32 16r32
+. 21r40
+10P9*Profesor(9R9) 12r42 21|3r42 4r16
+12V13*Create{10P9} 12>20 21|3b13 14t7
+12a20 Nombre{string} 21|3b20 7r44
+13V24*To_String{string}<19|15p13> 13>34 21|16b13 19t7
+13r34 This{9R9} 21|16b23 18r52
+14U14*Dictar_Curso 14=27 21|21b14 25t7
+14r27 This{9R9} 21|21b27 23m7 23r26 24r53
+19i7 Num_Cursos{7I9} 21|8m14 23m12 23r31 24r58
+X 21 profesor_model.adb
+4p7 Result{20|10P9} 7r7 8r7 9r14
 X 22 system.ads
 67M9*Address
 X 32 s-memory.ads

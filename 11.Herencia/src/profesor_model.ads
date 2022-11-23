@@ -15,7 +15,7 @@ package Profesor_Model is
 private
 
    type C_Profesor is new C_Persona with record
-      Nombre : Unbounded_String;
+      -- Nombre : Unbounded_String;
       Num_Cursos : Cursos_Dictado := 0;
    end record;
    

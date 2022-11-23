@@ -1,10 +1,16 @@
 package body Alumno_Model is
 
    function Create(Nombre:String) return Alumno is   
+      Result : Alumno := new C_Alumno;
    begin
-      return new C_Alumno'(C_Persona with
-                          Nombre => To_Unbounded_String(Nombre),
-                          Examenes => Empty_Vector);
+      
+      Result.Nombre := To_Unbounded_String(Nombre);
+      Result.Examenes := Empty;
+      return Result;
+      
+      --  return new C_Alumno'(C_Persona with
+      --                      Nombre => To_Unbounded_String(Nombre),
+      --                      Examenes => Empty_Vector);
    end;
    
    function To_String(This: in C_Alumno) return String is

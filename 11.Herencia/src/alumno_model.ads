@@ -24,7 +24,7 @@ private
    use Lista_Notas;
    
    type C_Alumno is new C_Persona with record
-      Nombre : Unbounded_String;
+      -- Nombre : Unbounded_String;
       Examenes : Lista_Notas.Vector := Empty_Vector; -- O Empty
    end record;
 

@@ -1,326 +1,58 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file />
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 11" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 11" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 14" line=" 10" >
-      <vfs_project />
+    <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_file>
+    <file_marker column=" 7" line=" 12" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\10.EjercicioObjetos\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 39" line=" 10" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 33" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 33" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 41" line=" 22" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 41" line=" 23" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 81" line=" 29" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 42" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 42" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 10" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 10" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 10" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 42" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 10" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 64" line=" 31" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\aula.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 8" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\aula.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 11" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 54" line=" 24" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 41" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\aula.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 24" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 41" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\aula.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 24" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 41" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\aula.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 34" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\aula.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 26" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 44" line=" 7" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 7" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 17" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 39" line=" 15" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 50" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 3" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 5" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 16" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 39" line=" 26" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 5" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 16" line=" 8" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 5" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 39" line=" 26" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 5" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 8" line=" 6" >
-      <vfs_project />
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
+      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 12" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
+      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 8" line=" 6" >
-      <vfs_project />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
+      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 12" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
+      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 16" line=" 8" >
-      <vfs_project />
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 6" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 12" >
-      <vfs_project />
+    <file_marker column=" 42" line=" 10" >
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
       <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\alumno_model.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 12" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\main.adb</vfs_file>
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
+      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.adb</vfs_file>
     </file_marker>
     <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\profesor_model.ads</vfs_file>
+      <vfs_project>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\default.gpr</vfs_project>
+      <vfs_file>C:\Users\rcuestal\Desktop\IndraNoviembre\11.Herencia\src\persona_model.ads</vfs_file>
     </file_marker>
   </Project>
 </Locations>

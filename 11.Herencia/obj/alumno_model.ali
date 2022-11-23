@@ -18,11 +18,12 @@ RV NO_LOCAL_ALLOCATORS
 RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U alumno_model%b	alumno_model.adb	c1c06f9f OO PK
+U alumno_model%b	alumno_model.adb	0fab721d OO PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -35,7 +36,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U alumno_model%s	alumno_model.ads	78d17c09 EE OO PF PK
+U alumno_model%s	alumno_model.ads	87e69709 EE OO PF PK
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -63,7 +64,6 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
-Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
@@ -88,11 +88,11 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
-D alumno_model.ads	20221123110222 180f0ddc alumno_model%s
-D alumno_model.adb	20221123103500 d9cf6243 alumno_model%b
+D alumno_model.ads	20221123115408 7a7b73a8 alumno_model%s
+D alumno_model.adb	20221123115744 75d001b5 alumno_model%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D persona_model.ads	20221123110042 90212ed5 persona_model%s
+D persona_model.ads	20221123115302 0d62bba1 persona_model%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-atocou.adb		20210520051132 b65612c0 system.atomic_counters%b
@@ -261,11 +261,12 @@ G c Z s s [c_alumnoDA alumno_model 26 9 none]
 G c Z s s [c_alumnoDF alumno_model 26 9 none]
 G c Z s s [c_alumnoDI alumno_model 26 9 none]
 G c Z s s [c_alumnoIP alumno_model 26 9 none]
-G r s c_persona [create alumno_model 14 13 none] [c_personaIP persona_model 15 9 none]
-G r j c_persona [c_alumnoDA alumno_model 26 9 none] [c_personaDA persona_model 15 9 none]
-G r k c_persona [c_alumnoDF alumno_model 26 9 none] [c_personaDF persona_model 15 9 none]
-G r s c_persona [c_alumnoIP alumno_model 26 9 none] [c_personaIP persona_model 15 9 none]
-G r k c_persona [c_alumnoIP alumno_model 26 9 none] [c_personaDF persona_model 15 9 none]
+G r s c_persona [create alumno_model 14 13 none] [c_personaIP persona_model 6 9 none]
+G r k c_persona [create alumno_model 14 13 none] [c_personaDF persona_model 6 9 none]
+G r j c_persona [c_alumnoDA alumno_model 26 9 none] [c_personaDA persona_model 6 9 none]
+G r k c_persona [c_alumnoDF alumno_model 26 9 none] [c_personaDF persona_model 6 9 none]
+G r s c_persona [c_alumnoIP alumno_model 26 9 none] [c_personaIP persona_model 6 9 none]
+G r k c_persona [c_alumnoIP alumno_model 26 9 none] [c_personaDF persona_model 6 9 none]
 X 1 ada.ads
 16K9*Ada 20e8 24|1r6 1r33 2r6 3r6 3r23 21r31
 X 4 a-contai.ads
@@ -276,9 +277,10 @@ X 8 a-convec.ads
 63+9 Element_Type 24|23r7
 74k24*Vectors 875e27 24|2w21 21r46
 91R9*Vector<11|43R9> 24|28r30[21]
-122r4*Empty_Vector{91R9[24|21]} 24|28r40[21] 25|7r39[24|21]
-175V13*Length{4|22I9} 25|22s63[24|21] 29s57[24|21]
-483U14*Append 25|18s21[24|21]
+122r4*Empty_Vector{91R9[24|21]} 24|28r40[21]
+125V13*Empty{91R9[24|21]} 25|8s26[24|21]
+175V13*Length{4|22I9} 25|28s63[24|21] 35s57[24|21]
+483U14*Append 25|24s21[24|21]
 X 13 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[8|119]>
@@ -286,37 +288,37 @@ X 15 a-string.ads
 16K13*Strings 35e16 24|1r10 1r37
 X 18 a-strunb.ads
 83K21*Unbounded 765e26 24|1w18 1r45
-88R9*Unbounded_String<11|43R9> 744e15 24|27r16
-104V13*To_Unbounded_String{88R9} 25|6s37
-117V13*To_String{string} 25|12s40
+104V13*To_Unbounded_String{88R9} 25|7s24
+117V13*To_String{string} 25|18s40
 X 21 a-textio.ads
 58K13*Text_IO 725e16 24|3w10 3r27
 X 24 alumno_model.ads
-6K9*Alumno_Model 21E12 31l5 31e17 25|1b14 32l5 32t17
-8I9*Nota<integer> 16r64 23r23 25|16r41
-9F9*Promedio_Notas<float> 17r57 25|21r57 29r17
-11R9*C_Alumno<28|5R9> 12r26 15P24 15r43 16p14 16r41 17p13 17r40 26c9 29e14
-. 25|5r18 10r32 15r41 21r40
-12P9*Alumno(11R9) 14r42 25|3r42
-14V13*Create{12P9} 14>20 25|3b13 8t7
-14a20 Nombre{string} 25|3b20 6r57
-15V24*To_String{string}<28|11p13> 15>34 25|10b13 13t7
-15r34 This{11R9} 25|10b23 12r50
-16U14*Rendir_Examen 16=28 16>51 25|15b14 19t7
-16r28 This{11R9} 25|15b28 18m7 18r7
-16i51 Nota_Examen{8I9} 25|16b28 18r28
-17V13*Calcular_Promedio{9F9} 17>31 25|21b13 30t7
-17r31 This{11R9} 25|21b31 22r70 25r24 29r64
+6K9*Alumno_Model 21E12 31l5 31e17 25|1b14 38l5 38t17
+8I9*Nota<integer> 16r64 23r23 25|22r41
+9F9*Promedio_Notas<float> 17r57 25|27r57 35r17
+11R9*C_Alumno<28|6R9> 12r26 15P24 15r43 16p14 16r41 17p13 17r40 26c9 29e14
+. 25|4r30 16r32 21r41 27r40
+12P9*Alumno(11R9) 14r42 25|3r42 4r16
+14V13*Create{12P9} 14>20 25|3b13 14t7
+14a20 Nombre{string} 25|3b20 7r44
+15V24*To_String{string}<28|15p13> 15>34 25|16b13 19t7
+15r34 This{11R9} 25|16b23 18r50
+16U14*Rendir_Examen 16=28 16>51 25|21b14 25t7
+16r28 This{11R9} 25|21b28 24m7 24r7
+16i51 Nota_Examen{8I9} 25|22b28 24r28
+17V13*Calcular_Promedio{9F9} 17>31 25|27b13 36t7
+17r31 This{11R9} 25|27b31 28r70 31r24 35r64
 21K12 Lista_Notas[8|74] 24r8 28r18
-27r7 Nombre{18|88R9} 25|6m27 12r55
-28r7 Examenes{8|91R9[21]} 25|7m27 18m12 22r75 25r29 29r69
+28r7 Examenes{8|91R9[21]} 25|8m14 24m12 28r75 31r29 35r69
 X 25 alumno_model.adb
-22F12 Sumatoria_Notas<float> 23r19 26r38
-23f7 Sumatoria{22F12} 26m13 26r26 29r38
-25i14 Examen{24|8I9} 26r54
+4p7 Result{24|12P9} 7r7 8r7 9r14
+28F12 Sumatoria_Notas<float> 29r19 32r38
+29f7 Sumatoria{28F12} 32m13 32r26 35r38
+31i14 Examen{24|8I9} 32r54
 X 28 persona_model.ads
-3K9*Persona_Model 24|4w6 4r25 28|19e18
-5H9*C_Persona 24|11r25 26r25 25|5r28 28|17e14
+3K9*Persona_Model 24|4w6 4r25 28|23e18
+6H9*C_Persona 24|11r25 26r25 28|8e14
+7r7*Nombre{18|88R9} 25|7m14 18r55
 X 29 system.ads
 67M9*Address
 X 38 s-memory.ads
