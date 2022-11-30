@@ -36,7 +36,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U alumno_model%s	alumno_model.ads	87e69709 EE OO PF PK
+U alumno_model%s	alumno_model.ads	94bd0917 EE OO PF PK
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -92,7 +92,7 @@ D alumno_model.ads	20221123115408 7a7b73a8 alumno_model%s
 D alumno_model.adb	20221123115744 75d001b5 alumno_model%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D persona_model.ads	20221123115302 0d62bba1 persona_model%s
+D persona_model.ads	20221124085630 1e3925bf persona_model%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-atocou.adb		20210520051132 b65612c0 system.atomic_counters%b
@@ -297,7 +297,7 @@ X 24 alumno_model.ads
 8I9*Nota<integer> 16r64 23r23 25|22r41
 9F9*Promedio_Notas<float> 17r57 25|27r57 35r17
 11R9*C_Alumno<28|6R9> 12r26 15P24 15r43 16p14 16r41 17p13 17r40 26c9 29e14
-. 25|4r30 16r32 21r41 27r40
+. 25|4r30 16r32 21r41 27r40 28|17p14 19p13
 12P9*Alumno(11R9) 14r42 25|3r42 4r16
 14V13*Create{12P9} 14>20 25|3b13 14t7
 14a20 Nombre{string} 25|3b20 7r44
@@ -316,9 +316,11 @@ X 25 alumno_model.adb
 29f7 Sumatoria{28F12} 32m13 32r26 35r38
 31i14 Examen{24|8I9} 32r54
 X 28 persona_model.ads
-3K9*Persona_Model 24|4w6 4r25 28|23e18
+3K9*Persona_Model 24|4w6 4r25 28|26e18
 6H9*C_Persona 24|11r25 26r25 28|8e14
 7r7*Nombre{18|88R9} 25|7m14 18r55
+17U14*Set_Nombre
+19V13*Get_Nombre{string}
 X 29 system.ads
 67M9*Address
 X 38 s-memory.ads

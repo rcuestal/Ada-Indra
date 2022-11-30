@@ -35,7 +35,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U profesor_model%s	profesor_model.ads	ae46088b EE OO PF PK
+U profesor_model%s	profesor_model.ads	bd1d9695 EE OO PF PK
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
@@ -72,7 +72,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D persona_model.ads	20221123115302 0d62bba1 persona_model%s
+D persona_model.ads	20221124085630 1e3925bf persona_model%s
 D profesor_model.ads	20221123115424 0ee23460 profesor_model%s
 D profesor_model.adb	20221123115706 d1d2f8a0 profesor_model%b
 D system.ads		20210520051136 2ffa5114 system%s
@@ -129,14 +129,16 @@ X 14 a-textio.ads
 58K13*Text_IO 725e16 20|2w10 2r27
 506U14*Put_Line 21|24s7
 X 19 persona_model.ads
-3K9*Persona_Model 23e18 20|3w6 3r25
+3K9*Persona_Model 26e18 20|3w6 3r25
 6H9*C_Persona 8e14 20|9r27 17r27
 7r7*Nombre{11|88R9} 21|7m14 18r57
+17U14*Set_Nombre
+19V13*Get_Nombre{string}
 X 20 profesor_model.ads
 5K9*Profesor_Model 17E9 22l5 22e19 21|1b14 27l5 27t19
 7I9*Cursos_Dictado<integer> 19r20
-9R9*C_Profesor<19|6R9> 10r28 13P24 13r43 14p14 14r40 17c9 20e14 21|4r32 16r32
-. 21r40
+9R9*C_Profesor<19|6R9> 19|17p14 19p13 20|10r28 13P24 13r43 14p14 14r40 17c9
+. 20e14 21|4r32 16r32 21r40
 10P9*Profesor(9R9) 12r42 21|3r42 4r16
 12V13*Create{10P9} 12>20 21|3b13 14t7
 12a20 Nombre{string} 21|3b20 7r44

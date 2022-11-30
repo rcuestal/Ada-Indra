@@ -1,0 +1,45 @@
+[GENERATED OBJECT FILE]
+b__default-main.o
+[PROJECT FILES]
+C:\Users\rcuestal\Desktop\IndraNoviembre\Extra-WebServer\default.gpr
+20221124081526 cd8327054d01724ffa37110a1fc1b014
+C:\gnat\2021\share\gpr\xmlada_dom.gpr
+20210520132532 c9b6b60014bb093c8cd6e30c93cab443
+C:\gnat\2021\share\gpr\xmlada_input.gpr
+20210520132534 addd6a823fefaf8369eb2aae2a8cc914
+C:\gnat\2021\share\gpr\xmlada_unicode.gpr
+20210520132534 f4c42fd1269de8c52cf43ca5615b3840
+C:\gnat\2021\share\gpr\xmlada_sax.gpr
+20210520132532 2d22baa303c9284a31403f4a92239587
+C:\gnat\2021\share\gpr\xmlada_schema.gpr
+20210520132532 3e4769a7974bb33950daeeaa111bee0f
+C:\gnat\2021\share\gpr\aws.gpr
+20210520135556 123676dd7454f30e655a8fccc75e2cf5
+[BOUND OBJECT FILES]
+C:\Users\rcuestal\Desktop\IndraNoviembre\Extra-WebServer\obj\default.o
+C:\Users\rcuestal\Desktop\IndraNoviembre\Extra-WebServer\obj\default-dispatchers.o
+C:\Users\rcuestal\Desktop\IndraNoviembre\Extra-WebServer\obj\default-main.o
+[GENERATED SOURCE FILES]
+b__default-main.ads
+b__default-main.adb
+b__default-main.ali
+[RESULTING OPTIONS]
+-LC:\Users\rcuestal\Desktop\IndraNoviembre\Extra-WebServer\obj\
+-LC:\Users\rcuestal\Desktop\IndraNoviembre\Extra-WebServer\obj\
+-LC:\gnat\2021\lib\aws.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_schema.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_sax.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_unicode.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_input.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_dom.static\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+-lws2_32
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-lws2_32
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
+-lm
